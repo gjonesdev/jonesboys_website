@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gjonalpd/supporttheguy/
+    - /bin/cp -R * $DEPLOYPATH
