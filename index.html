@@ -11,35 +11,44 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <script src="scripts/index.js"></script> -->
+	<script src="/index.js"></script>
 	<title>Jones Boys</title>
 </head>
 
 <body>
-	<img class="logo" src="/logo.png" />
-	<nav class="navbar">
+	<div class="nav-home">
 		<div>
-			<a href="/">Home</a>
-			<a href="/about">About Us</a>
-			<a href="/services">Services</a>
-			<a href="/contact">Contact Us</a>
+			<a href="/" class="logo-container"><img class="logo" src="/logo.png" /></a>
 		</div>
-	</nav>
-	<div class="hero">
+		<i id="menu-button" class="fa fa-bars fa-3x desktop-hide" onclick="openNav()" aria-hidden="true"></i>
+		<nav id="side-nav">
+			<ul class="nav-list">
+				<li><i id="close-button" class="fa fa-times fa-3x desktop-hide" onclick="closeNav()"
+						aria-hidden="true"></i></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/services">Services</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="hero" onclick="closeNav()">
 		<div class="hero-content">
-			<h1>Jones Boys get it done.</h1>
-			<h3>Fencing, Landscaping, and more. Done right.</h3>
+			<div class="hero-slogan">
+				<h1>Jones Boys get it done.</h1>
+				<h3>Fencing, Landscaping, and more. Done right.</h3>
+			</div>
+			<div class="hero-button">
+				<a href="/about">Learn More</a>
+			</div>
 		</div>
 	</div>
-	<div class="hero-button">
-		<a href="#">Learn More</a>
-	</div>
+
 	<footer>
 		<div class="footer-social">
-			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-linkedin"></i></a>
-			<a href="#"><i class="fa fa-github"></i></a>
+			<p>Phone: 908-675-7167</p>
+			<a href="https://www.facebook.com/JonesBoysNJ"><i class="fa fa-facebook"></i></a>
+			<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
 		</div>
 
 		<div>

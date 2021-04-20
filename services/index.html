@@ -10,25 +10,30 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <script src="scripts/index.js"></script> -->
+	<script src="/index.js"></script>
 	<title>Jones Boys</title>
 </head>
 
 <body>
-	<img class="logo" src="/logo.png" />
-	<nav class="navbar">
+	<div class="nav-bar">
 		<div>
-			<a href="/">Home</a>
-			<a href="/about">About Us</a>
-			<a href="/services">Services</a>
-			<a href="/contact">Contact Us</a>
+			<a href="/" class="logo-container"><img class="logo" src="/logo.png" /></a>
 		</div>
-	</nav>
-	<div class="top-bar">
+		<i id="menu-button" class="fa fa-bars fa-3x desktop-hide" onclick="openNav()" aria-hidden="true"></i>
+		<nav id="side-nav">
+			<ul class="nav-list">
+				<li><i id="close-button" class="fa fa-times fa-3x desktop-hide" onclick="closeNav()"
+						aria-hidden="true"></i></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/services">Services</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+		</nav>
 	</div>
-	<div class="page-container">
+	<div class="page-container" onclick="closeNav()">
 		<div class="services-text">
-			<h1>Making your property look new again</h1>
+			<h1><span class="mobile-hide">Making your property</span> look new again</h1>
 			<hr />
 			<br>
 			<p>Jones Boys don't only do fencing. We have a diversity of skills to refresh your property and give it
@@ -45,39 +50,57 @@
 			<div class="card">
 				<h1>Landscaping</h1>
 				<p>Get the yard you've always wanted, and a garden you can be proud of.</p>
+				<p>No task is too big or too small.</p>
 			</div>
 			<div class="card">
 				<h1>Decks</h1>
-				<p>Put a deck on that bitch</p>
+				<p>Decks are a great place to relax on a sunny afternoon.</p>
+				<p>Just let us know what you're looking for.
+					We've got you covered</p>
 			</div>
 		</div>
 		<div class="gallery">
 			<h1>Gallery</h1>
 			<hr />
-			<img />
-			<img />
-			<img />
-			<img />
-			<img />
-			<img />
-			<img />
-			<img />
+
+			<div class="gallery-row">
+				<div class="gallery-column">
+					<p>Before</p>
+					<img src="/before-corner.jpeg" />
+				</div>
+
+				<div class="gallery-column">
+					<p>After</p>
+					<img src="/after-corner.jpeg" />
+				</div>
+			</div>
+
+			<hr class="divider" />
+			<div class="gallery-row">
+
+				<div class="gallery-column">
+					<img src="/gate.jpg" />
+				</div>
+
+				<div class="gallery-column">
+					<img src="/fence.jpeg" />
+				</div>
+			</div>
 		</div>
 
-		<div class="contact-button">
-			<h1> Ready to get started?</h1>
-			<a href="contact">Contact Us</a>
+		<div class="button-container">
+			<h1> Ready to get <br class="desktop-hide" />started?</h1>
+			<div class="contact-button">
+				<a href="/contact">Contact Us</a>
+			</div>
 		</div>
-
-
 	</div>
 
 	<footer>
 		<div class="footer-social">
-			<a href="#"><i class="fa fa-facebook"></i></a>
-			<a href="#"><i class="fa fa-twitter"></i></a>
-			<a href="#"><i class="fa fa-linkedin"></i></a>
-			<a href="#"><i class="fa fa-github"></i></a>
+			<p>Phone: 908-675-7167</p>
+			<a href="https://www.facebook.com/JonesBoysNJ"><i class="fa fa-facebook"></i></a>
+			<!-- <a href="#"><i class="fa fa-linkedin"></i></a> -->
 		</div>
 
 		<div>
