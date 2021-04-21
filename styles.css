@@ -14,13 +14,14 @@ body {
 }
 
 body {
-	background-color: #f7f7f7;
+	background-color: black;
 }
 
 .page-container {
 	position: relative;
 	min-height: 80vh;
 	padding: 50px;
+	background-color: #f7f7f7;
 }
 
 @media (max-width: 762px) {
